@@ -36,8 +36,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := wayne_defconfig
 
-TW_USE_TOOLBOX := true
-
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
@@ -49,3 +47,6 @@ VENDOR_SECURITY_PATCH := 2020-04-05
 
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
+
+# Display
+TARGET_SCREEN_DENSITY := 480
